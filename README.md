@@ -71,7 +71,7 @@
 
 `pkg install python git nano`
 
-`git clone https://github.com/TronUb/Tron`
+`git clone -b termux-old https://github.com/TronUb/Tron.git`
 
 `cd Tron`
 
