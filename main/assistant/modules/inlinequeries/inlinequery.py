@@ -74,7 +74,7 @@ async def inline_result(_, inline_query):
                     [
                         app.BuildKeyboard(
                             (
-                                [f"{emoji} Modules {emoji}", "plugins-tab"]
+                                [f"{emoji} Plugins {emoji}", "plugins-tab"]
                             )
                         ),
                         app.BuildKeyboard(
