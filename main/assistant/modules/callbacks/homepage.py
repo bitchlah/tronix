@@ -1,3 +1,19 @@
+""".
+This file creates home page of helpmenu.
+"""
+
+from pyrogram import filters
+
+from pyrogram.types import (
+    InlineKeyboardMarkup,
+    InputMediaPhoto,
+    CallbackQuery,
+)
+
+from main.userbot.client import app
+
+
+
 @app.bot.on_callback_query(filters.regex("home-tab"))
 @app.alert_user
 async def _start(_, cb: CallbackQuery):
