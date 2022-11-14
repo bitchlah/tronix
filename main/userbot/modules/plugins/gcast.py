@@ -7,7 +7,21 @@ from requests import get
 
 from PunyaAlby.modules.broadcast import *
 
-from PunyaAlby.modules.help import *
+from main import app, gen
+
+
+
+
+app.CMD_HELP.update(
+    {"gcast" : (
+        "gcast",
+        {
+        ".gcast <text/reply>" : "Mengirim Global Broadcast pesan ke Seluruh Grup yang kamu masuk."
+        ".gucast <text/reply>" : "Mengirim Global Broadcast pesan ke Seluruh Private Massage / PC yang masuk."
+        }
+        )
+    }
+)
 
 DEVS = [
     844432220, #risman
@@ -152,17 +166,3 @@ async def jamal_gucast(client: Client, message: Message):
                  await yanto.edit_text(
                     f"✅ **Gucast Berhasil\nKirim ke:** {sent} **Obrolan\n Gagal mengirim :** {failed} **Obrolan**"
                 )
-
-add_command_help(
-    "gcast",
-    [
-        [
-            ".gcast <text/reply>",
-            "Mengirim Global Broadcast pesan ke Seluruh Grup yang kamu masuk.",
-        ],
-        [
-            ".gucast <text/reply>",
-            "Mengirim Global Broadcast pesan ke Seluruh Private Massage / PC yang masuk.",
-        ],
-    ],
-)
