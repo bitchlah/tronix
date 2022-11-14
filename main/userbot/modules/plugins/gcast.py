@@ -7,7 +7,7 @@ from requests import get
 
 from PunyaAlby.modules.broadcast import *
 
-from main import app, gen
+from main import app
 
 
 
