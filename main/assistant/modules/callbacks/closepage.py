@@ -50,11 +50,11 @@ async def _close(_, cb: CallbackQuery):
                 [
                     InlineKeyboardButton(
                         text="Group Support",
-                        callback_data="https:/t.me/ruangdiskusikami"
+                        url=f"https://t.me/ruangdiskusikami"
                     ),
                     InlineKeyboardButton(
                         text="Channel Update",
-                        callback_data="https:/t.me/ruangprojects"
+                        url=f"https://t.me/ruangprojects"
                     )
                 ],
                 [
