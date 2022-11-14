@@ -72,7 +72,13 @@ async def inline_result(_, inline_query):
                 caption=app.home_tab_string(),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        app.BuildKeyboard(([["Plugins", "plugins-tab"]])),
+                        app.BuildKeyboard(
+                            (
+                                [f"{emoji} Settings {emoji}", "settings-tab"],
+                                [f"{emoji} Plugins {emoji}", "plugins-tab"]
+                            )
+                        ),
+                        app.BuildKeyboard(([["Support", "support"]])),
                         app.BuildKeyboard(([["Close", "close-tab"]]))
                     ]
                 )
