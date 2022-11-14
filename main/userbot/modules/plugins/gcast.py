@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 from requests import get
 
-from PunyaAlby.modules.broadcast import *
+from main.userbot.modules.plugins.gcast import *
 
 from main import app
 
