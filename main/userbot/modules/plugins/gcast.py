@@ -1,6 +1,6 @@
 import asyncio
 
-from pyrogram import Client, filters
+from pyrogram import *
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 from requests import get
