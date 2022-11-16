@@ -11,7 +11,7 @@ class AlertUser(object):
             user = cb.from_user
             if user and not (user.id == self.id or user.id in self.SudoUsersList()):
                 await cb.answer(
-                    f"Sorry, but you can't use this userbot ! make your own userbot at @tronuserbot", 
+                    f"Sorry, but you can't use this userbot ! make your own userbot at @ruangprojects", 
                     show_alert=True
                 )
             else:
