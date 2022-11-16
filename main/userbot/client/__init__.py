@@ -13,4 +13,3 @@ if uvloop:
     uvloop.install()
 
 app = SuperClient()
-client = LowClient()
