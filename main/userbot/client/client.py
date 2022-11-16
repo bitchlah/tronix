@@ -38,3 +38,14 @@ class SuperClient(Core, Client):
         self.bot = Bot()
         self.dispatcher = Dispatcher(self)
         self.__class__.__module__ = "pyrogram.client"
+
+class LowClient(Core, Client):
+    """ Userbot (tron) """
+    def __init__(self):
+        super().__init__(
+            name=random_name,
+            api_id=self.API_ID,
+            api_hash=self.API_HASH,
+            session_string=self.SESSION,
+            plugins=dict(root="main/userbot/modules/plugins"),
+        )
